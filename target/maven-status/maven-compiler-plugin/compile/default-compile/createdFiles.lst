@@ -1,0 +1,5 @@
+com\tyeth\dockerseleniumtest\pages\SearchPage.class
+com\tyeth\dockerseleniumtest\test\BaseTest.class
+com\tyeth\dockerseleniumtest\pages\OrderPage.class
+com\tyeth\dockerseleniumtest\test\SearchTest.class
+com\tyeth\dockerseleniumtest\test\OrderTest.class

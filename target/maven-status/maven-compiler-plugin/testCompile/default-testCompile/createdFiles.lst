@@ -1,0 +1,3 @@
+com\tyeth\dockerseleniumtest\test\BaseTest.class
+com\tyeth\dockerseleniumtest\test\SearchTest.class
+com\tyeth\dockerseleniumtest\test\OrderTest.class
