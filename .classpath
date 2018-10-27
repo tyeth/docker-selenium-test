@@ -3,7 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/test/java"/>
-	<!-- <classpathentry kind="lib" path="target/dockerseleniumtest.jar"/> -->
 	<classpathentry kind="lib" path="target/libs/animal-sniffer-annotations-1.14.jar"/>
 	<classpathentry kind="lib" path="target/libs/cglib-nodep-3.2.4.jar"/>
 	<classpathentry kind="lib" path="target/libs/commons-codec-1.10.jar"/>
