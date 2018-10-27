@@ -5,10 +5,10 @@
     "\\src\\test",
     "\\src\\test\\java",
     "\\src\\test\\java\\com",
-    "\\src\\test\\java\\com\\testautomationguru",
-    "\\src\\test\\java\\com\\testautomationguru\\container",
-    "\\src\\test\\java\\com\\testautomationguru\\container\\test"
+    "\\src\\test\\java\\com\\tyeth",
+    "\\src\\test\\java\\com\\tyeth\\dockerseleniumtest",
+    "\\src\\test\\java\\com\\tyeth\\dockerseleniumtest\\test"
   ],
-  "SelectedNode": "\\src\\test\\java\\com\\testautomationguru\\container\\test\\BaseTest.java",
+  "SelectedNode": "\\src\\test\\java\\com\\tyeth\\dockerseleniumtest\\test\\BaseTest.java",
   "PreviewInSolutionExplorer": false
 }
