@@ -3,7 +3,7 @@
 <suite name="search-module" parallel="none" allow-return-values="true" >
   <test name="search-test">
     <classes>
-      <class name="com.tyeth.docker-selenium-test.test.SearchTest"/>
+      <class name="com.tyeth.dockerseleniumtest.test.SearchTest"/>
     </classes>
   </test>
 </suite>
