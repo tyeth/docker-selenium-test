@@ -1,6 +1,8 @@
 com\tyeth\dockerseleniumtest\pages\SearchPage.class
 com\tyeth\dockerseleniumtest\test\BaseTest.class
 com\tyeth\dockerseleniumtest\pages\OrderPage.class
+com\tyeth\dockerseleniumtest\test\RouterTest.class
+com\tyeth\dockerseleniumtest\test\WebUtil.class
+com\tyeth\dockerseleniumtest\pages\RouterPage$1.class
 com\tyeth\dockerseleniumtest\pages\RouterPage.class
-com\tyeth\dockerseleniumtest\test\SearchTest.class
-com\tyeth\dockerseleniumtest\test\OrderTest.class
+com\tyeth\dockerseleniumtest\test\KatalonStudioTest.class

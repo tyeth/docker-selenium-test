@@ -7,6 +7,7 @@ ADD  target/libs /usr/share/tag/libs
 # Add the suite xmls
 ADD order-module.xml /usr/share/tag/order-module.xml
 ADD search-module.xml /usr/share/tag/search-module.xml
+ADD router-module.xml /usr/share/tag/router-module.xml
 
 # Command line to execute the test
 # Expects below ennvironment variables

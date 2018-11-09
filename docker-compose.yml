@@ -15,6 +15,7 @@ services:
       retries: 3
   chrome:
     image: selenium/node-chrome
+    container_name: selenium-chrome
     depends_on:
       - selenium-hub
     ports:
@@ -31,11 +32,13 @@ services:
       start_period: 15s
       retries: 3
   firefox:
-    image: selenium/node-firefox
+    image: selenium/node-firefox-debug
+    container_name: selenium-firefox
     depends_on:
       - selenium-hub
     ports:
       - "5552:5555"
+      - "5900:5900"
     environment:
       - HUB_PORT_4444_TCP_ADDR=selenium-hub
       - HUB_PORT_4444_TCP_PORT=4444
@@ -47,23 +50,33 @@ services:
       timeout: 10s
       start_period: 15s
       retries: 3
-  search-module:
-    image: vinsdocker/containertest:demo
-    container_name: search-module
+#  search-module:
+#    image: tyeth/docker-selenium-test:demo
+#    container_name: search-module
+#    depends_on:
+#      - firefox
+#      - chrome
+#    environment:
+#      - MODULE=search-module.xml
+#      - BROWSER=firefox
+#      - SELENIUM_HUB=selenium-hub
+#  order-module:
+#    image: tyeth/docker-selenium-test:demo
+#    container_name: order-module
+#    depends_on:
+#      - firefox
+#      - chrome
+#    environment:
+#      - MODULE=order-module.xml
+#      - BROWSER=chrome
+#      - SELENIUM_HUB=selenium-hub
+  router-module:
+    image: tyeth/docker-selenium-test:demo
+    container_name: router-module
     depends_on:
       - firefox
       - chrome
     environment:
-      - MODULE=search-module.xml
+      - MODULE=router-module.xml
       - BROWSER=firefox
-      - SELENIUM_HUB=selenium-hub
-  order-module:
-    image: vinsdocker/containertest:demo
-    container_name: order-module
-    depends_on:
-      - firefox
-      - chrome
-    environment:
-      - MODULE=order-module.xml
-      - BROWSER=chrome
       - SELENIUM_HUB=selenium-hub
